@@ -7,8 +7,7 @@
 #include "controller.h"
 #include "device.h"
 #include <bits/unique_ptr.h>
-
-#define UNIQUEPTR(TYPE) std::unique_ptr<TYPE>(new TYPE)
+#include "common.h"
 int main(){
     auto ctrl = UNIQUEPTR(zy::commandPattern::controller);
 
